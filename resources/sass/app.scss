@@ -1,0 +1,8 @@
+@import "~bootstrap/scss/bootstrap";
+.alert-success,.alert-danger{
+    color: white;
+    font-weight: bold;
+}
+.alert-success{
+    background: rgb(34 197 94);
+}

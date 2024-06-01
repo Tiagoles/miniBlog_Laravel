@@ -1,0 +1,155 @@
+ input,select,textarea{
+    outline: transparent;
+    resize: none;
+    background: transparent;
+}
+input.daltonismo,select.daltonismo,textarea.daltonismo, nav ul li a.daltonismo{
+    color: #2e2e2e !important;
+}
+label{
+    font-weight: 600;
+}
+nav ul li a{
+    letter-spacing: 1px;
+}
+
+body.daltonismo {
+    background-color: #f0f0f0;
+    color: #2e2e2e;
+}
+ 
+a.daltonismo {
+    color: #1a73e8; 
+}
+
+.nav-link,#moon-theme, #eye-mod{
+    transition: 1s;
+}
+#moon-theme:hover, #eye-mod:hover{
+    background-color: #737373 !important;
+}
+.form-login{
+    border-bottom: 2px solid rgb(115 115 115);
+}
+
+.form-register{
+    border-bottom: 2px solid rgb(115 115 115);
+}
+
+.nav-link:hover{
+    color: rgb(115 115 115) !important;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+ 
+}
+nav{
+    border-bottom: 2px solid rgb(99, 102, 241);
+}
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+ 
+}
+footer {
+    flex-shrink: 0;
+    border-top: 2px solid rgb(99, 102, 241);
+}
+
+footer.daltonismo {
+    flex-shrink: 0;
+    border-top: 2px solid rgb(255, 165, 0);
+}
+nav.daltonismo{
+     border-bottom: 2px solid rgb(255, 165, 0);
+
+}
+
+#button-dropdown-bottom-get{
+    outline: none;
+    border: 0;
+}
+
+#container-dopdrown-profile{
+    float: right;
+    display: flex;
+    justify-content: end;
+    height: 100px;
+    width: 100px;
+    
+}
+#container-dopdrown-profile img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.container-img-rounded-profile-post{
+    height: 64px;
+    width: 64px;
+    margin: 0 0 50px 0
+ 
+}
+.container-introduction-profile-image{
+   height: 300px;
+}
+.container-introduction-profile-image img{
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.container-img-rounded-profile-post img.container-img-rounded-profile-post a{
+    width: 100%;
+    height: 100%;
+
+}
+.container-img-rounded-profile-post img{
+    border-radius: 50px;
+}
+
+ 
+.author-user-post{
+    position: absolute;
+    top: 0;
+    margin-left: 4.5rem;
+}
+.display-options-post{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
+
+}
+ 
+.display-options-post ul li:hover{
+    transition: 1s;
+    background-color: #737373 !important;
+}
+
+/* .hideMessages{
+    animation: fadeOut 1s ease-out 5s forwards;
+}
+@keyframes fadeOut {
+    0%{
+        display: block;
+    } 100%{
+        display: none;
+    }
+} */
+ 
+
+
+
+
+
+
+
