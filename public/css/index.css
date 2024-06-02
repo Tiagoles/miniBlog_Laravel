@@ -135,7 +135,7 @@ nav.daltonismo{
     background-color: #737373 !important;
 }
 
-/* .hideMessages{
+.hideMessages{
     animation: fadeOut 1s ease-out 5s forwards;
 }
 @keyframes fadeOut {
@@ -144,7 +144,7 @@ nav.daltonismo{
     } 100%{
         display: none;
     }
-} */
+} 
  
 
 
