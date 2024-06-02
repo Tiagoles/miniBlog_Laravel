@@ -95,24 +95,23 @@ nav.daltonismo{
     height: 64px;
     width: 64px;
     margin: 0 0 50px 0
- 
 }
 .container-introduction-profile-image{
    height: 300px;
 }
 .container-introduction-profile-image img{
     border: 2px solid transparent;
-    border-radius: 10px;
+    border-radius: 5px;
 }
-.container-img-rounded-profile-post img.container-img-rounded-profile-post a{
+
+.container-img-rounded-profile-post img{
+    border-radius: 20px;
     width: 100%;
     height: 100%;
-
 }
-.container-img-rounded-profile-post img{
+#icon-author-comment{
     border-radius: 50px;
 }
-
  
 .author-user-post{
     position: absolute;
@@ -138,6 +137,7 @@ nav.daltonismo{
 .hideMessages{
     animation: fadeOut 1s ease-out 5s forwards;
 }
+ 
 @keyframes fadeOut {
     0%{
         display: block;

@@ -87,7 +87,7 @@
                                     <a href="{{ route('user.show', ['id' => $comment->user_id]) }}">
                                         <img src="{{ asset("storage/img/profile_photos/{$comment->photo_profile_author_comment}") }}"
                                             alt="imagem de publicação"
-                                            class="card-img-top img-rounded-profile-post d-inline-block">
+                                            class="card-img-top img-rounded-profile-post d-inline-block" id="icon-author-comment">
                                         <a href="{{ route('user.show', ['id' => $comment->user_id]) }}"
                                             class="position-absolute mt-2 ms-3 ">
                                             @php

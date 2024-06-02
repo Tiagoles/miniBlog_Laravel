@@ -61,7 +61,7 @@
                         <li><a class="dropdown-item" href="{{ route('app.about') }}">Sobre</a></li>
                         <li><a class="dropdown-item" href="{{ route('edit.user') }}">Perfil</a></li>
                         <li>
-                            <a type="button" class="dropdown-item" data-bs-toggle="modal"
+                            <a type="button" data-mode="create" class="dropdown-item" data-bs-toggle="modal"
                                 data-bs-target="#addPosteUpdate">
                                 Adicionar publicação
                             </a>
