@@ -27,7 +27,6 @@
                                              class="py-2 px-2 my-2 relative cursor-pointer font-semibold text-indigo-600 hover:text-indigo-500">
                                              <input type="file" name="image_post" id="profile_photo_user_create"
                                                  class="block w-full ">
-                                        
                                          </label>
                                      </div>
                                      <p class=" text-center text-xs leading-5">Suportamos apenas PNG, JPG.</p>
@@ -41,7 +40,7 @@
                                  <textarea id="description-post-create" name="description" cols="30" rows="10"
                                      placeholder="Digite algo aqui..."
                                      class="block w-full rounded-md py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 border border-dashed"
-                                     required></textarea>
+                                     ></textarea>
                              </div>
                              <p class="mt-3 text-sm leading-6">Escreva sobre sentimentos, vontades, etc.</p>
                              <button

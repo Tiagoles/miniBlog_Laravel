@@ -16,15 +16,15 @@ class CommentPostController extends Controller
     {
         $posts = Post::all();
         $user = Auth::user();
- 
+
         $comment = new CommentsPosts();
         $comments = $comment->create([
             'comments' => $request->input("text-area-comment-post"),
-            'name'=>$user->name,
+            'name' => $user->name,
             "photo_profile_author_comment" => $user->photo_profile,
-            'user_id'=> $user->id,
-            'post_id'=> $request->post_id,
-            'created_at'=> Date::now()->format("d-m-Y H:i:s")
+            'user_id' => $user->id,
+            'post_id' => $request->post_id,
+            'created_at' => Date::now()->format("d-m-Y H:i:s")
         ]);
         $title = "Seu perfil";
         return redirect()->route('edit.user')->with(
@@ -35,6 +35,15 @@ class CommentPostController extends Controller
                 "posts" => $posts,
             ]
         );
-         
-    }  
+    }
+    public function destroy(Request $request)
+    {
+
+        $comment = CommentsPosts::where("id_comment", $request->id)->get();
+        $success = $comment->delete();
+        if ($success) {
+            return redirect()->route("app.home")->with("success", "Comentário excluído com sucesso");
+        } else {
+        }
+    }
 }

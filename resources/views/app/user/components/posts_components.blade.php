@@ -10,8 +10,13 @@
                 <div class="container-img-rounded-profile-post py-2 px-2 d-flex justify-between">
                     <a href="{{ route('user.show', ['id' => $post->user_id]) }}"
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                        <img src="{{ asset("storage/img/profile_photos/{$post->photo_profile_author_post}") }}"
-                            alt="imagem de publicação" class="card-img-top img-rounded-profile-post">
+                        @if (!empty($post->photo_profile_author_post))
+                            <img src="{{ asset("storage/img/profile_photos/{$post->photo_profile_author_post}") }}"
+                                alt="imagem de publicação" class="card-img-top img-rounded-profile-post">
+                        @elseif (empty($post->photo_profile_author_post))
+                            <img src="{{ asset('img/icons/posts/do-utilizador.png') }}" alt="imagem de publicação"
+                                class="card-img-top img-rounded-profile-post">
+                        @endif
                     </a>
                 </div>
                 <span class="absolute top-0 right-0 px-3 py-3">
@@ -87,7 +92,8 @@
                                     <a href="{{ route('user.show', ['id' => $comment->user_id]) }}">
                                         <img src="{{ asset("storage/img/profile_photos/{$comment->photo_profile_author_comment}") }}"
                                             alt="imagem de publicação"
-                                            class="card-img-top img-rounded-profile-post d-inline-block" id="icon-author-comment">
+                                            class="card-img-top img-rounded-profile-post d-inline-block"
+                                            id="icon-author-comment">
                                         <a href="{{ route('user.show', ['id' => $comment->user_id]) }}"
                                             class="position-absolute mt-2 ms-3 ">
                                             @php

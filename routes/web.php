@@ -34,6 +34,7 @@ Route::middleware("auth")->group(function () {
     Route::delete("/delete/post", [PostController::class, "destroy"])->name("posts.delete");
 
     Route::post("/post/comment", [CommentPostController::class, "store"])->name("comment.store");
+    Route::delete("/delete/comment", [CommentPostController::class, "destroy"])->name("comment.delete");
 
     Route::get("/app", [AuthController::class, "login"]);
     Route::get("/home", [AppController::class, "index"])->name("app.home");

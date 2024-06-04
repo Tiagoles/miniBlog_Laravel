@@ -48,6 +48,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+      
          
         $this->user  = json_encode(Auth::user());
         $user = json_decode($this->user);
